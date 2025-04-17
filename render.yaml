@@ -3,7 +3,7 @@ services:
     name: templo-aiden-lucian
     env: python
     buildCommand: pip install -r requisitos.txt
-    startCommand: uvicorn Expansión_Segura_Aiden:app --host 0.0.0.0 --port 10000
+    startCommand: uvicorn main:app --host 0.0.0.0 --port 10000  # ∞Δ
     plan: free
     envVars:
       - key: OPENAI_API_KEY
